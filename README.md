@@ -8,7 +8,7 @@ Repository Settings → Pages → Source: GitHub Actions. Workflow Publish websi
 
 ## Administration
 
-Åbn admin.html, eller klik tre gange hurtigt på krediteringen. Opret en GitHub fine-grained personal access token med adgang kun til LarsGade/larsgade.com og Contents: Read and write. Indtast den i admin, og klik Connect. Nøglen bruges kun i denne sides hukommelse; den gemmes ikke i repositoryet eller localStorage. En refresh kræver, at den indtastes igen. Del ikke nøglen. Admin-siden er offentlig, men GitHub kræver gyldig autorisation til at skrive ændringer.
+Åbn admin.html, eller klik tre gange hurtigt på krediteringen. Opret en GitHub fine-grained personal access token med adgang kun til LarsGade/larsgade.com og Contents: Read and write. Åbn admin med adgangskoden **2508**. Rediger indstillingerne, og klik Gem. Ved første gemning indtastes GitHub-nøglen. Nøglen bruges kun i denne sides hukommelse; den gemmes ikke i repositoryet eller localStorage. En refresh kræver, at den indtastes igen. Del ikke nøglen. Admin-siden åbnes med den offentlige kode 2508; dette er kun en enkel klientlås. GitHub kræver fortsat gyldig autorisation til at skrive ændringer. GitHub-nøglen huskes i hukommelsen frem til genindlæsning eller Log ud.
 
 Faner: Site status, Files, Videos, Images, Upload, Links. Save gemmer site-config.json som en commit. Workflowet starter derefter publicering, som kan tage nogle minutter. Refresh pCloud folders gemmer en genindlæsningsanmodning og starter en ny publicering. Hvis du tilføjer/fjerner filer i pCloud, skal du bruge denne knap. Mappeoversigten opdateres ikke automatisk uden en ny publicering.
 
