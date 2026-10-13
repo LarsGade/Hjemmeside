@@ -543,3 +543,36 @@ html[data-theme="light"] body header nav a.header-home:hover{
   background:#000!important;color:#fff!important;border-color:#000!important;
  }
 }
+
+/* Identical compact navigation layout for Danish and English.
+   Fixed seven equal slots prevent translated labels from shifting tabs. */
+@media(min-width:761px){
+ body header .bar>nav[aria-label="Main menu"]{
+   display:grid!important;
+   grid-template-columns:repeat(7,minmax(0,1fr))!important;
+   align-items:center!important;
+   justify-items:center!important;
+   gap:0!important;
+   width:100%!important;
+   min-width:0!important;
+ }
+ body header nav[aria-label="Main menu"] a,
+ body header nav[aria-label="Main menu"] a.header-home{
+   width:min(100%,96px)!important;
+   min-width:0!important;
+   height:46px!important;
+   padding:0 5px!important;
+   margin:0!important;
+   display:flex!important;
+   align-items:center!important;
+   justify-content:center!important;
+   font-size:15px!important;
+   line-height:1!important;
+   white-space:nowrap!important;
+ }
+}
+@media(min-width:461px) and (max-width:760px){
+ body header .bar>nav[aria-label="Main menu"]{display:none!important}
+ body header .bar>details{display:block!important;grid-column:2;justify-self:center}
+ body header .bar{grid-template-columns:50px minmax(0,1fr) 50px!important}
+}
