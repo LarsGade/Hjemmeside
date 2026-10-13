@@ -246,3 +246,6 @@ html[data-theme="light"] body .downloads a,
 html[data-theme="light"] body .downloads a:visited{background:#9eb2c1!important;border-color:#718899!important;color:#101820!important}
 html[data-theme="light"] body .downloads a span{color:#101820!important}
 html[data-theme="light"] body .downloads a:hover{background:#829cac!important;border-color:#526b7b!important;color:#080e14!important}
+
+/* Fine-tune copyright symbol baseline beside Lars Gade. */
+body footer .copyright-symbol{transform:translateY(1px)}
