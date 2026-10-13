@@ -266,3 +266,6 @@ body .access-code-gate button{min-height:44px;width:100%;background:var(--button
 body .access-code-gate .access-code-error{color:#e08080;margin:14px 0 0;font-size:13px}
 
 body .access-code-gate input[type="password"]{font-size:34px;line-height:1.3;letter-spacing:.15em}
+
+/* Prevent scroll anchoring when the access form is replaced by pCloud. */
+body[data-section="files"] main,body[data-section="images"] main,body[data-section="videos"] main{overflow-anchor:none}
