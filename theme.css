@@ -439,3 +439,8 @@ body #admin-login #admin-unlock-form.access-code-gate button{
   padding:0 16px!important;
 }
 body .access-code-gate .access-code-error{margin:14px 0 0!important}
+
+/* Align Admin's access prompt with the other protected pages, below the page heading. */
+body #admin-main.access-page #admin-login{display:contents}
+body #admin-main.access-page #admin-unlock-form.access-code-gate{margin-top:24px!important;margin-bottom:50px!important}
+body #admin-main.access-page{justify-content:flex-start}
