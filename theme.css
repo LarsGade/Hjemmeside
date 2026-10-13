@@ -361,3 +361,20 @@ html[data-theme="light"] body .admin-tabs button[aria-selected="true"]{
   border-color:#000!important;
   border-bottom-color:#000!important;
 }
+
+/* Monochrome buttons across the public site and Admin. */
+:root{--site-button:#fff;--site-button-hover:#d9d9d9;--site-button-text:#000;--button-accent:#fff}
+html[data-theme="light"]{--site-button:#000;--site-button-hover:#333;--site-button-text:#fff;--button-accent:#000}
+body :is(button:not(#theme-toggle):not(#language-toggle),.pc-button,.upload-button,.pcloud-upload-link,.downloads a){
+  background:var(--site-button)!important;
+  border:1px solid var(--site-button)!important;
+  color:var(--site-button-text)!important;
+  border-radius:0!important;
+}
+body :is(button:not(#theme-toggle):not(#language-toggle),.pc-button,.upload-button,.pcloud-upload-link,.downloads a):hover:not(:disabled){
+  background:var(--site-button-hover)!important;
+  border-color:var(--site-button-hover)!important;
+  color:var(--site-button-text)!important;
+}
+body .admin-tabs button:hover,body .admin-tabs button[aria-selected="true"]{background:#fff!important;color:#000!important;border-color:#fff!important}
+html[data-theme="light"] body .admin-tabs button:hover,html[data-theme="light"] body .admin-tabs button[aria-selected="true"]{background:#000!important;color:#fff!important;border-color:#000!important}
