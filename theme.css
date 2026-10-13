@@ -336,3 +336,28 @@ body .admin-tabs button[aria-selected="true"]{
   outline:2px solid var(--accent);
   outline-offset:-2px;
 }
+
+/* High-contrast filled navigation tabs: white on dark, black on light. */
+body header nav[aria-label="Main menu"] a:hover,
+body header nav[aria-label="Main menu"] a[aria-current="page"],
+body header nav[aria-label="Main menu"] a.header-home:hover,
+body .admin-tabs button:hover,
+body .admin-tabs button[aria-selected="true"]{
+  background:#fff!important;
+  color:#000!important;
+  border-color:#fff!important;
+  border-bottom-color:#fff!important;
+  outline:0!important;
+  box-shadow:none!important;
+  border-radius:0!important;
+}
+html[data-theme="light"] body header nav[aria-label="Main menu"] a:hover,
+html[data-theme="light"] body header nav[aria-label="Main menu"] a[aria-current="page"],
+html[data-theme="light"] body header nav[aria-label="Main menu"] a.header-home:hover,
+html[data-theme="light"] body .admin-tabs button:hover,
+html[data-theme="light"] body .admin-tabs button[aria-selected="true"]{
+  background:#000!important;
+  color:#fff!important;
+  border-color:#000!important;
+  border-bottom-color:#000!important;
+}
