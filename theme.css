@@ -249,3 +249,7 @@ html[data-theme="light"] body .downloads a:hover{background:#829cac!important;bo
 
 /* Fine-tune copyright symbol baseline beside Lars Gade. */
 body footer .copyright-symbol{transform:translateY(1px)}
+
+/* Move the sun/moon footer toggle slightly closer to the language control. */
+body footer #theme-toggle{right:72px}
+@media(max-width:460px){body footer #theme-toggle{right:68px}}
