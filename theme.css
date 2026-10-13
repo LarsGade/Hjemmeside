@@ -488,3 +488,30 @@ html[data-theme="light"] body header nav a.header-home:hover{
   border-color:#000!important;
   border-bottom-color:#000!important;
 }
+
+/* Consistent navigation geometry regardless of translated label length or viewport breakpoint. */
+@media(min-width:461px){
+ body header .bar>nav[aria-label="Main menu"]{
+   display:flex!important;
+   flex-wrap:nowrap!important;
+   align-items:center!important;
+   justify-content:center!important;
+   gap:clamp(6px,1.5vw,20px)!important;
+   min-width:0;
+ }
+ body header nav[aria-label="Main menu"] a,
+ body header nav[aria-label="Main menu"] a.header-home{
+   box-sizing:border-box!important;
+   display:inline-flex!important;
+   align-items:center!important;
+   justify-content:center!important;
+   flex:0 0 auto!important;
+   height:64px!important;
+   padding:0 clamp(5px,1vw,12px)!important;
+   margin:0!important;
+   line-height:1.2!important;
+   white-space:nowrap!important;
+   font-size:clamp(12px,1.15vw,15px)!important;
+ }
+ body header .bar{min-height:80px!important}
+}
