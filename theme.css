@@ -1,5 +1,5 @@
 :root{color-scheme:dark;--bg:#181818;--deep:#181818;--surface:#181818;--surface-2:#181818;--border:#414141;--text:#eeeeee;--muted:#cccccc;--dim:#999999;--accent:#cccccc;--accent-soft:#cccccc1f;--button-accent:#8bcae6;--danger:#dddddd}
-html body{background:var(--bg);color:var(--text);font-family:'JetBrains Mono',monospace;font-size:15px;line-height:1.65;text-rendering:optimizeLegibility}
+html body{background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;font-size:15px;line-height:1.65;text-rendering:optimizeLegibility}
 ::selection{background:#555555;color:#ffffff}
 body header{background:var(--deep);border-bottom:1px solid var(--border)}
 body .bar{min-height:80px;gap:24px}
@@ -7,7 +7,7 @@ body .brand img{width:42px;height:42px}
 body nav{gap:28px}
 body nav a{font-size:14.3px;color:var(--muted);padding:27px 0;letter-spacing:.02em}
 body nav a:hover,body nav a[aria-current="page"]{color:var(--accent);border-bottom-color:var(--accent)}
-body h1,body h2,body h3{color:var(--text);font-family:'Geist',sans-serif;font-weight:600;letter-spacing:-.025em}
+body h1,body h2,body h3{color:var(--text);font-family:Arial,Helvetica,sans-serif;font-weight:600;letter-spacing:-.025em}
 body h1{font-size:clamp(30px,4vw,44px);margin-bottom:30px}
 body .page h2{font-size:24px;font-weight:600}
 body .page p,body .intro,body small,body .pc-row small,body .pc-selection span{color:var(--muted)}
