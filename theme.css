@@ -296,3 +296,13 @@ body #admin-login #admin-unlock-form.access-code-gate p{margin:0 0 22px;color:va
 body #admin-login #admin-unlock-form.access-code-gate input[type="password"]{display:block;width:100%;font-size:34px;line-height:1.3;letter-spacing:.15em;text-align:center;margin:0 0 16px}
 body #admin-login #admin-unlock-form.access-code-gate button{display:block;width:100%;min-height:44px}
 html[data-theme="light"] body #admin-login,html[data-theme="light"] body #editor{color:var(--text)}
+
+/* Admin panels follow the selected theme rather than retaining dark hardcoded colors. */
+html[data-theme="light"] body .admin-panel,
+html[data-theme="light"] body .github-connection{background:var(--surface)!important;border-color:var(--border)!important;color:var(--text)!important}
+html[data-theme="light"] body .admin-panel :is(h1,h2,h3,p,label,span),
+html[data-theme="light"] body .github-connection :is(h1,h2,h3,p,label,span){color:var(--text)!important}
+html[data-theme="light"] body .admin-panel input,
+html[data-theme="light"] body .github-connection input{background:var(--bg)!important;color:var(--text)!important;border-color:var(--border)!important}
+html[data-theme="light"] body .admin-panel .settings-divider{border-top-color:var(--border)}
+html[data-theme="light"] body .admin-panel a{color:var(--accent)}
