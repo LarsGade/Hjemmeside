@@ -653,3 +653,21 @@ body>footer #language-toggle{
 @media(max-width:460px){
  body>footer,body.home>footer{padding:18px 24px!important;min-height:82px!important}
 }
+
+/* Match the home page footer on every page: same width, line and spacing. */
+body>footer,body.home>footer{
+  width:calc(100% - 64px)!important;
+  max-width:1320px!important;
+  margin:0 auto!important;
+  padding:20px 8px 24px!important;
+  min-height:94px!important;
+  border-top:1px solid var(--border)!important;
+  background:var(--bg)!important;
+}
+@media(max-width:460px){
+ body>footer,body.home>footer{
+  width:calc(100% - 48px)!important;
+  padding:18px 4px!important;
+  min-height:82px!important;
+ }
+}
