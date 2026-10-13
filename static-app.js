@@ -1,3 +1,4 @@
+if(['files','images','videos'].includes(document.body.dataset.section)){history.scrollRestoration='manual';window.addEventListener('pageshow',()=>window.scrollTo(0,0));window.scrollTo(0,0);}
 const CONFIG_URL='site-config.json',INDEX_URL='folder-index.json';let siteConfig,folderIndex;
 const el=(tag,text)=>{const n=document.createElement(tag);if(text)n.textContent=text;return n;};
 function safeUrl(value){try{const u=new URL(value);return ['http:','https:'].includes(u.protocol)?u.href:null;}catch{return null;}}
