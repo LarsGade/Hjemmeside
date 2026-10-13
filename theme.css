@@ -450,3 +450,9 @@ body #admin-main.access-page>h1{margin-bottom:20px!important}
 
 /* Files collapses heading/card margins; Admin flex layout does not. Equalize the resulting gap. */
 body #admin-main.access-page #admin-unlock-form.access-code-gate{margin-top:4px!important}
+
+/* Admin locked screen uses the exact same block flow as Files, not a flex column. */
+body main#admin-main.access-page{display:block!important}
+body main#admin-main.access-page>h1{margin-bottom:20px!important}
+body main#admin-main.access-page #admin-login{display:block!important}
+body main#admin-main.access-page #admin-unlock-form.access-code-gate{margin:24px auto 50px!important}
