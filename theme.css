@@ -239,3 +239,10 @@ body .pcloud-upload-card>p{margin:0 0 26px;color:var(--muted)}
 body .pcloud-upload-link{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:13px 24px;background:var(--button-accent);color:#15212b!important;border:1px solid var(--button-accent);font-weight:700;text-decoration:none!important}
 body .pcloud-upload-link:hover{background:#aedcf0;border-color:#aedcf0}
 body .pcloud-upload-card .pcloud-upload-note{font-size:13px;margin:24px 0 0}
+
+/* Light theme: invert the monochrome homepage banner and use darker help tiles. */
+html[data-theme="light"] body.home .home-artwork{filter:invert(1);background:#fff;border:2px solid #111}
+html[data-theme="light"] body .downloads a,
+html[data-theme="light"] body .downloads a:visited{background:#9eb2c1!important;border-color:#718899!important;color:#101820!important}
+html[data-theme="light"] body .downloads a span{color:#101820!important}
+html[data-theme="light"] body .downloads a:hover{background:#829cac!important;border-color:#526b7b!important;color:#080e14!important}
