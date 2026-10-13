@@ -193,3 +193,23 @@ body .pcloud-embed-page{width:100%;max-width:none;padding-left:0;padding-right:0
 body .pcloud-embed-page>h1,body .pcloud-embed-help,body #pcloud-embed-status{margin-left:clamp(16px,2.5vw,40px);margin-right:clamp(16px,2.5vw,40px)}
 body .pcloud-embed-shell{width:100%;height:calc(100dvh - 190px);min-height:600px;border-left:0;border-right:0}
 @media(max-width:800px){body .pcloud-embed-page{width:100%}body .pcloud-embed-shell{height:calc(100dvh - 155px);min-height:440px}}
+
+/* Theme switcher and copyright alignment. */
+body footer .copyright-symbol{transform:translateY(3px)}
+body footer #theme-toggle{position:absolute;right:85px;top:50%;transform:translateY(-50%);display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;padding:6px;color:var(--dim);background:transparent;border:0}
+body footer #theme-toggle:hover{color:var(--text);background:transparent}
+body footer #theme-toggle .sun-icon{display:none}
+html[data-theme="light"] body footer #theme-toggle .sun-icon{display:block}
+html[data-theme="light"] body footer #theme-toggle .moon-icon{display:none}
+@media(max-width:460px){body footer #theme-toggle{right:77px}}
+/* Light theme only affects this site's interface; third-party pCloud iframes retain their own theme. */
+html[data-theme="light"]{color-scheme:light;--bg:#f7f8fa;--deep:#ffffff;--surface:#ffffff;--surface-2:#edf0f3;--border:#d7dce2;--text:#1c2630;--muted:#46515d;--dim:#626d77;--accent:#223849;--accent-soft:#d9eaf3;--button-accent:#c4e6f4;--danger:#b43232}
+html[data-theme="light"] body header{background:#ffffff}
+html[data-theme="light"] body nav a:hover,html[data-theme="light"] body nav a[aria-current="page"]{color:#172b3a}
+html[data-theme="light"] body .page p,html[data-theme="light"] body .intro,html[data-theme="light"] body small{color:var(--muted)}
+html[data-theme="light"] body .empty,html[data-theme="light"] body .pc-drop{background:var(--surface)}
+html[data-theme="light"] body .pc-button,html[data-theme="light"] body button:not(#language-toggle):not(#theme-toggle):not(#logout){color:#fff}
+html[data-theme="light"] body footer #theme-toggle,html[data-theme="light"] body footer #language-toggle{color:var(--muted)}
+html[data-theme="light"] body footer #theme-toggle:hover,html[data-theme="light"] body footer #language-toggle:hover{color:var(--text)}
+html[data-theme="light"] body .home-hero .gade-wordmark{color:var(--accent)}
+html[data-theme="light"] body .pcloud-embed-shell{background:#fff}
