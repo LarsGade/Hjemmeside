@@ -456,3 +456,6 @@ body main#admin-main.access-page{display:block!important}
 body main#admin-main.access-page>h1{margin-bottom:20px!important}
 body main#admin-main.access-page #admin-login{display:block!important}
 body main#admin-main.access-page #admin-unlock-form.access-code-gate{margin:24px auto 50px!important}
+
+/* Video comparison: Admin gate starts 6px above Files. Match its exact top edge. */
+body main#admin-main.access-page #admin-unlock-form.access-code-gate{margin-top:30px!important}
