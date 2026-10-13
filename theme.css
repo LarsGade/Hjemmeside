@@ -378,3 +378,20 @@ body :is(button:not(#theme-toggle):not(#language-toggle),.pc-button,.upload-butt
 }
 body .admin-tabs button:hover,body .admin-tabs button[aria-selected="true"]{background:#fff!important;color:#000!important;border-color:#fff!important}
 html[data-theme="light"] body .admin-tabs button:hover,html[data-theme="light"] body .admin-tabs button[aria-selected="true"]{background:#000!important;color:#fff!important;border-color:#000!important}
+
+/* Monochrome square borders for access-code and form fields. */
+body :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]):not([type="hidden"]),textarea,select){
+  border:1px solid #fff!important;
+  border-radius:0!important;
+  box-shadow:none!important;
+}
+html[data-theme="light"] body :is(input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="file"]):not([type="hidden"]),textarea,select){
+  border-color:#000!important;
+}
+body :is(input,textarea,select):focus-visible{
+  outline:2px solid #fff!important;
+  outline-offset:2px;
+}
+html[data-theme="light"] body :is(input,textarea,select):focus-visible{
+  outline-color:#000!important;
+}
