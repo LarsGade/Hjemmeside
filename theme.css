@@ -459,3 +459,43 @@ body main#admin-main.access-page #admin-unlock-form.access-code-gate{margin:24px
 
 /* Video comparison: Admin gate starts 6px above Files. Match its exact top edge. */
 body main#admin-main.access-page #admin-unlock-form.access-code-gate{margin-top:30px!important}
+
+/* One stable viewport grid and identical locked-page layout. */
+html{scrollbar-gutter:stable}
+body[data-section="files"] main.page,
+body[data-section="images"] main.page,
+body[data-section="videos"] main.page,
+body[data-section="upload"] main.page,
+body main#admin-main.access-page{
+  box-sizing:border-box!important;
+  display:block!important;
+  width:100%!important;
+  max-width:none!important;
+  min-height:calc(100dvh - 160px)!important;
+  margin:0 auto!important;
+  padding:72px 32px 68px!important;
+}
+body[data-section="files"] main.page>h1,
+body[data-section="images"] main.page>h1,
+body[data-section="videos"] main.page>h1,
+body[data-section="upload"] main.page>h1,
+body main#admin-main.access-page>h1{
+  margin:0 0 20px!important;
+  line-height:1.25!important;
+  padding:0!important;
+}
+body[data-section="files"] main.page>.access-code-gate,
+body[data-section="images"] main.page>.access-code-gate,
+body[data-section="videos"] main.page>.access-code-gate,
+body[data-section="upload"] main.page>.access-code-gate,
+body main#admin-main.access-page #admin-unlock-form.access-code-gate{
+  margin:24px auto 50px!important;
+}
+body main#admin-main.access-page #admin-login{display:flow-root!important}
+@media(max-width:800px){
+ body[data-section="files"] main.page,
+ body[data-section="images"] main.page,
+ body[data-section="videos"] main.page,
+ body[data-section="upload"] main.page,
+ body main#admin-main.access-page{padding:46px 24px!important}
+}
