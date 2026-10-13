@@ -460,3 +460,31 @@ body main#admin-main.access-page #admin-unlock-form.access-code-gate{margin:24px
 /* Video comparison: Admin gate starts 6px above Files. Match its exact top edge. */
 body main#admin-main.access-page #admin-unlock-form.access-code-gate{margin-top:30px!important}
 
+
+/* Navigation appearance is independent of translated labels and language. */
+body header nav a,
+body header nav a.header-home{
+  box-sizing:border-box;
+  border:1px solid transparent!important;
+  border-radius:0!important;
+  text-decoration:none!important;
+  box-shadow:none!important;
+}
+body header nav a:hover,
+body header nav a[aria-current="page"],
+body header nav a.header-home:hover{
+  background:#fff!important;
+  color:#000!important;
+  border:1px solid #fff!important;
+  border-bottom:1px solid #fff!important;
+  text-decoration:none!important;
+  box-shadow:none!important;
+}
+html[data-theme="light"] body header nav a:hover,
+html[data-theme="light"] body header nav a[aria-current="page"],
+html[data-theme="light"] body header nav a.header-home:hover{
+  background:#000!important;
+  color:#fff!important;
+  border-color:#000!important;
+  border-bottom-color:#000!important;
+}
