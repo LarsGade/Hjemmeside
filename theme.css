@@ -576,3 +576,19 @@ html[data-theme="light"] body header nav a.header-home:hover{
  body header .bar>details{display:block!important;grid-column:2;justify-self:center}
  body header .bar{grid-template-columns:50px minmax(0,1fr) 50px!important}
 }
+
+/* Help download tiles: white labels and visible artwork on black light-theme buttons. */
+html[data-theme="light"] body .downloads a,
+html[data-theme="light"] body .downloads a:visited,
+html[data-theme="light"] body .downloads a span,
+html[data-theme="light"] body .downloads a:hover span{
+ color:#fff!important;
+}
+html[data-theme="light"] body .downloads a img{
+ mix-blend-mode:normal!important;
+ opacity:1!important;
+ filter:brightness(0) invert(1)!important;
+ background:transparent!important;
+}
+html[data-theme="light"] body .downloads a:hover,
+html[data-theme="light"] body .downloads a:hover span{color:#fff!important}
