@@ -447,3 +447,6 @@ body #admin-main.access-page{justify-content:flex-start}
 
 /* Match the Files heading-to-code-card spacing exactly in Admin. */
 body #admin-main.access-page>h1{margin-bottom:20px!important}
+
+/* Files collapses heading/card margins; Admin flex layout does not. Equalize the resulting gap. */
+body #admin-main.access-page #admin-unlock-form.access-code-gate{margin-top:4px!important}
