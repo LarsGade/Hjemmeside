@@ -11,3 +11,11 @@ for(const element of document.querySelectorAll('[aria-label],[title],[placeholde
 const toggle=document.querySelector('#language-toggle');if(toggle){toggle.textContent=siteLanguage==='da'?'English':'Dansk';toggle.setAttribute('aria-label',siteLanguage==='da'?'Switch to English':'Skift til dansk');toggle.lang=siteLanguage==='da'?'en':'da';}languageObserver?.observe(document.documentElement,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['aria-label','title','placeholder','alt']});}
 const nativeConfirm=window.confirm.bind(window);window.confirm=text=>nativeConfirm(translateText(text));
 languageObserver=new MutationObserver(()=>applySiteLanguage());document.querySelector('#language-toggle')?.addEventListener('click',()=>{siteLanguage=siteLanguage==='da'?'en':'da';try{localStorage.setItem('lg-language',siteLanguage);}catch{}applySiteLanguage();});applySiteLanguage();
+
+(function(){
+ const button=document.getElementById('theme-toggle');if(!button)return;
+ let theme='dark';try{theme=localStorage.getItem('lg-theme')==='light'?'light':'dark';}catch{}
+ function render(){document.documentElement.dataset.theme=theme;const label=theme==='dark'?'Skift til lyst tema':'Skift til mørkt tema';button.setAttribute('aria-label',label);button.setAttribute('title',label);button.setAttribute('aria-pressed',String(theme==='light'));}
+ button.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';try{localStorage.setItem('lg-theme',theme);}catch{}render();});
+ render();
+})();
