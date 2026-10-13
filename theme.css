@@ -170,3 +170,10 @@ body[data-section="images"] #image-list .pc-name{flex:1;min-width:0;overflow-wra
 /* Media download links share the site's button styling. */
 body .media-download{display:inline-flex;align-items:center;justify-content:center;padding:9px 14px;background:var(--button-accent);border:1px solid var(--button-accent);color:var(--deep);font-size:13px;font-weight:600;text-decoration:none;margin-right:12px}
 body .media-download:hover{background:#aedcf0;border-color:#aedcf0;color:var(--deep);text-decoration:none}
+
+/* Consistent explorer selection controls across Files, Images and Videos. */
+body .media-selection{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:10px;padding:12px 0;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+body .media-selection label{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font-size:13px}
+body .media-selection input{width:18px;height:18px;accent-color:var(--button-accent)}
+body .media-selection button{padding:9px 12px}
+body .media-selection span{font-size:12px;color:var(--muted)}
