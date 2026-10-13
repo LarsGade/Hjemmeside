@@ -187,3 +187,9 @@ body .pcloud-embed-help{margin:12px 0;color:var(--muted);font-size:13px}
 body .pcloud-embed-help a{text-decoration:underline}
 body #pcloud-embed-status{font-size:14px}
 @media(max-width:800px){body .pcloud-embed-page{width:calc(100% - 32px)}body .pcloud-embed-shell{height:78dvh;min-height:460px}}
+
+/* Let the shared pCloud page occupy the full available content region. */
+body .pcloud-embed-page{width:100%;max-width:none;padding-left:0;padding-right:0}
+body .pcloud-embed-page>h1,body .pcloud-embed-help,body #pcloud-embed-status{margin-left:clamp(16px,2.5vw,40px);margin-right:clamp(16px,2.5vw,40px)}
+body .pcloud-embed-shell{width:100%;height:calc(100dvh - 190px);min-height:600px;border-left:0;border-right:0}
+@media(max-width:800px){body .pcloud-embed-page{width:100%}body .pcloud-embed-shell{height:calc(100dvh - 155px);min-height:440px}}
