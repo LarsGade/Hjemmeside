@@ -276,3 +276,8 @@ body header nav[aria-label="Main menu"] .header-home svg{display:block;width:18p
 body header nav[aria-label="Main menu"] .header-home:hover{color:var(--text)}
 body footer #theme-toggle{left:0;right:auto;top:50%;transform:translateY(-50%)}
 @media(max-width:460px){body footer #theme-toggle{left:0;right:auto}}
+
+/* Home is a regular navigation tab, matching Files and Videos. */
+body header nav[aria-label="Main menu"] a.header-home{display:inline-block;align-items:unset;justify-content:unset;padding:30px 0;border-bottom:2px solid transparent;color:inherit;font-size:15px;font-weight:inherit;text-decoration:none}
+body header nav[aria-label="Main menu"] a.header-home:hover{color:#fff;border-bottom-color:#aaa}
+html[data-theme="light"] body header nav[aria-label="Main menu"] a.header-home:hover{color:var(--text)}
