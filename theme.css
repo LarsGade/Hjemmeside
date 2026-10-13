@@ -269,3 +269,10 @@ body .access-code-gate input[type="password"]{font-size:34px;line-height:1.3;let
 
 /* Prevent scroll anchoring when the access form is replaced by pCloud. */
 body[data-section="files"] main,body[data-section="images"] main,body[data-section="videos"] main{overflow-anchor:none}
+
+/* Home in main navigation; theme switch in former footer home position. */
+body header nav[aria-label="Main menu"] .header-home{display:inline-flex;align-items:center;justify-content:center;flex:none;padding:0;border-bottom:2px solid transparent;color:inherit}
+body header nav[aria-label="Main menu"] .header-home svg{display:block;width:18px;height:18px}
+body header nav[aria-label="Main menu"] .header-home:hover{color:var(--text)}
+body footer #theme-toggle{left:0;right:auto;top:50%;transform:translateY(-50%)}
+@media(max-width:460px){body footer #theme-toggle{left:0;right:auto}}
