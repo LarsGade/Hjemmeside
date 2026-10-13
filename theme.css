@@ -444,3 +444,6 @@ body .access-code-gate .access-code-error{margin:14px 0 0!important}
 body #admin-main.access-page #admin-login{display:contents}
 body #admin-main.access-page #admin-unlock-form.access-code-gate{margin-top:24px!important;margin-bottom:50px!important}
 body #admin-main.access-page{justify-content:flex-start}
+
+/* Match the Files heading-to-code-card spacing exactly in Admin. */
+body #admin-main.access-page>h1{margin-bottom:20px!important}
