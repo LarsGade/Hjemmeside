@@ -222,3 +222,12 @@ html[data-theme="light"] body footer #theme-toggle .moon-icon{display:none}
 html[data-theme="light"] body footer #theme-toggle .sun-icon{display:block}
 body footer #language-toggle{min-width:72px;text-align:right}
 @media(max-width:460px){body footer #theme-toggle{right:78px}}
+
+/* Light mode uses a light-grey page background; the toggle icon shows the destination mode. */
+html[data-theme="light"]{--bg:#e8eaed;--surface:#f1f2f4;--surface-2:#e2e5e9}
+html[data-theme="light"] body,html[data-theme="light"] body.home{background:#e8eaed!important;color:var(--text)}
+html[data-theme="light"] body main,html[data-theme="light"] body .home-hero{background:transparent}
+body footer #theme-toggle .moon-icon{display:none}
+body footer #theme-toggle .sun-icon{display:block}
+html[data-theme="light"] body footer #theme-toggle .sun-icon{display:none}
+html[data-theme="light"] body footer #theme-toggle .moon-icon{display:block}
