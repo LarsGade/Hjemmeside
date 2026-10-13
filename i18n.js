@@ -35,7 +35,7 @@ languageObserver=new MutationObserver(()=>applySiteLanguage());document.querySel
 (function(){
  const button=document.getElementById('theme-toggle');if(!button)return;
  let theme='dark';try{theme=localStorage.getItem('lg-theme')==='light'?'light':'dark';}catch{}
- function render(){document.documentElement.dataset.theme=theme;const label=theme==='dark'?'Skift til lyst tema':'Skift til mørkt tema';button.setAttribute('aria-label',label);button.setAttribute('title',label);button.setAttribute('aria-pressed',String(theme==='light'));}
- button.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';try{localStorage.setItem('lg-theme',theme);}catch{}render();});
+ function render(){document.documentElement.dataset.theme=theme;const currentLanguage=(()=>{try{return localStorage.getItem('lg-language')==='en'?'en':'da';}catch{return 'da';}})();const label=theme==='dark'?(currentLanguage==='en'?'Switch to light theme':'Skift til lyst tema'):(currentLanguage==='en'?'Switch to dark theme':'Skift til mørkt tema');button.setAttribute('aria-label',label);button.setAttribute('title',label);button.setAttribute('aria-pressed',String(theme==='light'));}
+ document.querySelector('#language-toggle')?.addEventListener('click',()=>queueMicrotask(render));button.addEventListener('click',()=>{theme=theme==='dark'?'light':'dark';try{localStorage.setItem('lg-theme',theme);}catch{}render();});
  render();
 })();
