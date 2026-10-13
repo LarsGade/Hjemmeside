@@ -231,3 +231,11 @@ body footer #theme-toggle .moon-icon{display:none}
 body footer #theme-toggle .sun-icon{display:block}
 html[data-theme="light"] body footer #theme-toggle .sun-icon{display:none}
 html[data-theme="light"] body footer #theme-toggle .moon-icon{display:block}
+
+/* pCloud upload requests cannot be embedded; show a direct action instead. */
+body .pcloud-upload-page{max-width:820px}
+body .pcloud-upload-card{border:1px solid var(--border);background:var(--surface);padding:clamp(24px,5vw,56px);text-align:center}
+body .pcloud-upload-card>p{margin:0 0 26px;color:var(--muted)}
+body .pcloud-upload-link{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:13px 24px;background:var(--button-accent);color:#15212b!important;border:1px solid var(--button-accent);font-weight:700;text-decoration:none!important}
+body .pcloud-upload-link:hover{background:#aedcf0;border-color:#aedcf0}
+body .pcloud-upload-card .pcloud-upload-note{font-size:13px;margin:24px 0 0}
