@@ -213,3 +213,12 @@ html[data-theme="light"] body footer #theme-toggle,html[data-theme="light"] body
 html[data-theme="light"] body footer #theme-toggle:hover,html[data-theme="light"] body footer #language-toggle:hover{color:var(--text)}
 html[data-theme="light"] body .home-hero .gade-wordmark{color:var(--accent)}
 html[data-theme="light"] body .pcloud-embed-shell{background:#fff}
+
+/* Keep the theme icon directly beside the language switch in the footer. */
+body footer #theme-toggle{right:calc(0px + 82px);width:34px;height:34px;display:inline-flex;align-items:center;justify-content:center;color:var(--dim);z-index:1}
+body footer #theme-toggle svg{display:block;width:18px;height:18px;stroke:currentColor;flex:none}
+body footer #theme-toggle .sun-icon{display:none}
+html[data-theme="light"] body footer #theme-toggle .moon-icon{display:none}
+html[data-theme="light"] body footer #theme-toggle .sun-icon{display:block}
+body footer #language-toggle{min-width:72px;text-align:right}
+@media(max-width:460px){body footer #theme-toggle{right:78px}}
