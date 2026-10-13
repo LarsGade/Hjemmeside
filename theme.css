@@ -592,3 +592,12 @@ html[data-theme="light"] body .downloads a img{
 }
 html[data-theme="light"] body .downloads a:hover,
 html[data-theme="light"] body .downloads a:hover span{color:#fff!important}
+
+/* In light mode invert the original black-on-white icon image:
+   black artwork becomes white and its white background becomes black. */
+html[data-theme="light"] body .downloads a img{
+  filter:invert(1)!important;
+  mix-blend-mode:normal!important;
+  background:transparent!important;
+  border:0!important;
+}
