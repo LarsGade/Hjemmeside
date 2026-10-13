@@ -515,3 +515,31 @@ html[data-theme="light"] body header nav a.header-home:hover{
  }
  body header .bar{min-height:80px!important}
 }
+
+/* Reference navigation: compact filled active tab, same in Danish and English. */
+@media(min-width:461px){
+ body header .bar{min-height:80px!important}
+ body header .bar>nav[aria-label="Main menu"]{
+  display:flex!important;align-items:center!important;justify-content:space-between!important;
+  flex-wrap:nowrap!important;gap:clamp(10px,2vw,30px)!important;
+ }
+ body header nav[aria-label="Main menu"] a,
+ body header nav[aria-label="Main menu"] a.header-home{
+  display:inline-flex!important;align-items:center!important;justify-content:center!important;
+  box-sizing:border-box!important;height:46px!important;
+  padding:0 clamp(10px,1.4vw,20px)!important;
+  margin:0!important;line-height:1!important;
+  font-size:15px!important;font-weight:400!important;
+  white-space:nowrap!important;
+  border:1px solid transparent!important;
+  border-radius:0!important;
+ }
+ body header nav[aria-label="Main menu"] a:hover,
+ body header nav[aria-label="Main menu"] a[aria-current="page"]{
+  background:#fff!important;color:#000!important;border-color:#fff!important;
+ }
+ html[data-theme="light"] body header nav[aria-label="Main menu"] a:hover,
+ html[data-theme="light"] body header nav[aria-label="Main menu"] a[aria-current="page"]{
+  background:#000!important;color:#fff!important;border-color:#000!important;
+ }
+}
