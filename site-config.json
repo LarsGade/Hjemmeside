@@ -12,6 +12,12 @@
   "upload": {
     "url": "https://e.pcloud.com/#page=puplink&code=XUa7ZqH4zlkblL7RHD9l1kmMM1Q2kmGcy"
   },
-  "links": [],
+  "links": [
+    {
+      "name": "Hest",
+      "url": "https://larsgade.github.io/larsgade.com/admin.html",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRMXR9StNZThK2E27c8Hka9v99regv6WOJsowaYGOeOw&s=10"
+    }
+  ],
   "refreshRequestedAt": "2026-10-13T16:50:14.675Z"
 }
