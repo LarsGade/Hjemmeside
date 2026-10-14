@@ -726,3 +726,9 @@ body .contact-list a{width:max-content;max-width:100%;justify-self:start}
 /* Links page: only the actual link label is interactive, never the full row. */
 body #links-list .public-link-row a{display:inline!important;width:max-content!important;max-width:100%!important;align-self:flex-start!important;flex:none!important}
 body #links-list .public-link-row{cursor:default!important}
+
+/* Stable footer during content-only page changes. */
+html body{min-height:100vh;min-height:100dvh}
+html body>main{min-height:calc(100vh - 182px);min-height:calc(100dvh - 182px);flex:1 0 auto}
+html body>footer{flex-shrink:0;transition:none!important;animation:none!important;contain:layout style}
+html body>footer *,html body>footer *::before,html body>footer *::after{transition:none!important;animation:none!important}
