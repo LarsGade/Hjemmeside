@@ -742,4 +742,4 @@ html[data-theme="light"] body.home .home-artwork{filter:invert(1)!important;back
 
 /* Restore a clean circular outline while keeping the area outside transparent. */
 body.home .home-artwork{clip-path:none!important;border:2px solid #ddd!important;border-radius:50%!important;box-sizing:border-box;background:transparent!important}
-html[data-theme="light"] body.home .home-artwork{border:2px solid #222!important;background:transparent!important;filter:invert(1)!important}
+html[data-theme="light"] body.home .home-artwork{border:2px solid #ddd!important;background:transparent!important;filter:invert(1)!important}
