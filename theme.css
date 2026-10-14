@@ -739,3 +739,7 @@ html body>footer *,html body>footer *::before,html body>footer *::after{transiti
 /* Homepage logo: remove the square image backdrop in both themes. */
 body.home .home-artwork{clip-path:circle(47% at 50% 50%);background:transparent!important;border:0!important;box-shadow:none!important}
 html[data-theme="light"] body.home .home-artwork{filter:invert(1)!important;background:transparent!important;border:0!important}
+
+/* Restore a clean circular outline while keeping the area outside transparent. */
+body.home .home-artwork{clip-path:none!important;border:2px solid #ddd!important;border-radius:50%!important;box-sizing:border-box;background:transparent!important}
+html[data-theme="light"] body.home .home-artwork{border:2px solid #222!important;background:transparent!important;filter:invert(1)!important}
