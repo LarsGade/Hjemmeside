@@ -681,3 +681,11 @@ body header nav a,body header nav a.header-home{transition:none!important;animat
 @media(hover:hover){body header nav a:not([aria-current="page"]):hover{background:transparent!important;border-color:transparent!important;color:inherit!important}}
 body header nav a:focus:not(:focus-visible){outline:none!important;box-shadow:none!important}
 body header nav a:active{transform:none!important}
+
+/* Compact eight-tab navigation: single row on desktop and tablets. */
+@media(min-width:601px){
+ body header .bar>nav{display:grid!important;grid-template-columns:repeat(8,minmax(0,1fr))!important;gap:0!important;width:100%!important;min-width:0!important;align-items:center!important;justify-items:center!important}
+ body header .bar>nav a,body header .bar>nav a.header-home{box-sizing:border-box!important;width:100%!important;max-width:94px!important;min-width:0!important;padding:0 3px!important;margin:0!important;font-size:clamp(11px,1.15vw,15px)!important;white-space:nowrap!important}
+ body header .bar>details{display:none!important}
+}
+@media(min-width:601px) and (max-width:760px){body header .bar{display:flex!important;align-items:center!important}}
