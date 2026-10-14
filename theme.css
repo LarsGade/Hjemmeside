@@ -673,5 +673,5 @@ body>footer,body.home>footer{
 }
 
 /* Keep the square LG artwork at the requested smaller size. */
-body.home .home-artwork{width:min(500px,80vw);max-width:100%;height:auto}
-@media(max-width:800px){body.home .home-artwork{width:min(500px,80vw)}}
+body.home .home-artwork{width:min(400px,64vw);max-width:100%;height:auto}
+@media(max-width:800px){body.home .home-artwork{width:min(400px,64vw)}}
