@@ -675,3 +675,9 @@ body>footer,body.home>footer{
 /* Keep the square LG artwork at the requested smaller size. */
 body.home .home-artwork{width:min(400px,64vw);max-width:100%;height:auto}
 @media(max-width:800px){body.home .home-artwork{width:min(400px,64vw)}}
+
+/* Stable navigation: no hover boxes, border flashes or color transitions. */
+body header nav a,body header nav a.header-home{transition:none!important;animation:none!important;outline-offset:0}
+@media(hover:hover){body header nav a:not([aria-current="page"]):hover{background:transparent!important;border-color:transparent!important;color:inherit!important}}
+body header nav a:focus:not(:focus-visible){outline:none!important;box-shadow:none!important}
+body header nav a:active{transform:none!important}
