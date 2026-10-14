@@ -719,3 +719,6 @@ body .contact-list{display:grid;gap:28px;margin-top:36px}
 body .contact-list a{display:flex;align-items:center;gap:20px;text-decoration:none;font-size:clamp(15px,2.5vw,20px);overflow-wrap:anywhere}
 body .contact-list a:hover{text-decoration:underline}
 body .contact-list svg{width:30px;height:30px;flex:none;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* Contact links should only be clickable on the icon/text, not across the row. */
+body .contact-list a{width:max-content;max-width:100%;justify-self:start}
