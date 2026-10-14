@@ -704,3 +704,9 @@ html[data-theme="light"] body header .bar>nav a.header-home:hover,
 html[data-theme="light"] body header .bar>nav a.header-home[aria-current="page"]{
  background:transparent!important;border-color:transparent!important;box-shadow:none!important;
 }
+
+/* Footer credit is the home link. */
+body>footer #credit{cursor:pointer!important;text-decoration:none!important;color:inherit!important;display:inline-flex;align-items:center;gap:.35em}
+body>footer #credit:hover,body>footer #credit:visited{color:inherit!important;text-decoration:none!important}
+/* Seven navigation items after removing the header logo. */
+@media(min-width:601px){body header .bar>nav{grid-template-columns:repeat(7,minmax(0,1fr))!important}}
