@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="da">
-<head><script>try{document.documentElement.dataset.theme=localStorage.getItem('lg-theme')==='light'?'light':'dark';document.documentElement.lang=localStorage.getItem('lg-language')==='en'?'en':'da'}catch{document.documentElement.dataset.theme='dark'}</script>
+<head><style>html:not(.language-ready) body{visibility:hidden}</style><script>window.addEventListener('load',()=>document.documentElement.classList.add('language-ready'))</script><script>try{document.documentElement.dataset.theme=localStorage.getItem('lg-theme')==='light'?'light':'dark';document.documentElement.lang=localStorage.getItem('lg-language')==='en'?'en':'da'}catch{document.documentElement.dataset.theme='dark'}</script>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Upload – Lars Gade</title><meta name="description" content="Lars Gade’s website. Links, files, upload and help.">
 <style>
@@ -28,4 +28,4 @@
 </nav></details></div></header>
 <main class="page pcloud-upload-page"><h1>Upload</h1><div class="pcloud-upload-card"><p>Upload filer direkte via pCloud.</p><a id="pcloud-open-link" class="pcloud-upload-link" href="#" target="_blank" rel="noopener noreferrer">Åbn pCloud Upload ↗</a><p class="pcloud-upload-note">pCloud åbnes i en ny fane, fordi uploadtjenesten ikke tillader indlejring på andre hjemmesider.</p><p id="pcloud-embed-status" role="status" aria-live="polite"></p></div></main>
 <footer><span id="credit" tabindex="0"><span class="copyright-symbol">©</span><span>Lars Gade</span></span><button id="theme-toggle" type="button" aria-label="Skift til lyst tema" title="Skift tema"><svg class="theme-icon moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.9 13.1A9 9 0 0 1 10.9 3.1 9 9 0 1 0 20.9 13.1Z"/></svg><svg class="theme-icon sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></svg></button><button id="language-toggle" type="button">English</button></footer>
-<script src="static-app.js?v=upload-gate-1"></script><script src="i18n.js?v=theme-tooltip-2"></script></body></html>
+<script src="static-app.js?v=upload-gate-1"></script><script src="i18n.js?v=language-flash-3"></script><script>document.documentElement.classList.add("language-ready")</script></body></html>
