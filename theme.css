@@ -735,3 +735,7 @@ html body>footer *,html body>footer *::before,html body>footer *::after{transiti
 
 /* Six navigation tabs after removing Contact. */
 @media(min-width:601px){body header .bar>nav{grid-template-columns:repeat(6,minmax(0,1fr))!important}}
+
+/* Homepage logo: remove the square image backdrop in both themes. */
+body.home .home-artwork{clip-path:circle(47% at 50% 50%);background:transparent!important;border:0!important;box-shadow:none!important}
+html[data-theme="light"] body.home .home-artwork{filter:invert(1)!important;background:transparent!important;border:0!important}
