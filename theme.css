@@ -689,3 +689,7 @@ body header nav a:active{transform:none!important}
  body header .bar>details{display:none!important}
 }
 @media(min-width:601px) and (max-width:760px){body header .bar{display:flex!important;align-items:center!important}}
+
+/* LG logo replaces the home tab label without changing navigation geometry. */
+body header .bar>nav a.header-home img{display:block;width:34px;height:34px;object-fit:contain;flex:none}
+body header .bar>nav a.header-home{font-size:0!important}
