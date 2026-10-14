@@ -14,7 +14,7 @@ def build():
             shutil.copytree(path, out / path.name)
         elif path.is_file() and (path.suffix in ('.html', '.css', '.js') or path.name in ('.nojekyll', 'CNAME', 'site-config.json')):
             shutil.copy2(path, out / path.name)
-    aliases = {'files': 'filer.html', 'videos': 'videos.html', 'images': 'images.html', 'links': 'links.html', 'upload': 'upload.html', 'help': 'hjaelp.html', 'contact': 'kontakt.html'}
+    aliases = {'files': 'filer.html', 'videos': 'videos.html', 'images': 'images.html', 'links': 'links.html', 'upload': 'upload.html', 'help': 'hjaelp.html'}
     for slug, filename in aliases.items():
         folder = out / slug
         folder.mkdir()
