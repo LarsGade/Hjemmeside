@@ -722,3 +722,7 @@ body .contact-list svg{width:30px;height:30px;flex:none;fill:none;stroke:current
 
 /* Contact links should only be clickable on the icon/text, not across the row. */
 body .contact-list a{width:max-content;max-width:100%;justify-self:start}
+
+/* Links page: only the actual link label is interactive, never the full row. */
+body #links-list .public-link-row a{display:inline!important;width:max-content!important;max-width:100%!important;align-self:flex-start!important;flex:none!important}
+body #links-list .public-link-row{cursor:default!important}
