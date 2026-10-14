@@ -732,3 +732,6 @@ html body{min-height:100vh;min-height:100dvh}
 html body>main{min-height:calc(100vh - 182px);min-height:calc(100dvh - 182px);flex:1 0 auto}
 html body>footer{flex-shrink:0;transition:none!important;animation:none!important;contain:layout style}
 html body>footer *,html body>footer *::before,html body>footer *::after{transition:none!important;animation:none!important}
+
+/* Six navigation tabs after removing Contact. */
+@media(min-width:601px){body header .bar>nav{grid-template-columns:repeat(6,minmax(0,1fr))!important}}
