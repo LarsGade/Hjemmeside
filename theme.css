@@ -693,3 +693,14 @@ body header nav a:active{transform:none!important}
 /* LG logo replaces the home tab label without changing navigation geometry. */
 body header .bar>nav a.header-home img{display:block;width:34px;height:34px;object-fit:contain;flex:none}
 body header .bar>nav a.header-home{font-size:0!important}
+
+/* The LG home logo never receives the filled active/hover tab treatment. */
+body header .bar>nav a.header-home,
+body header .bar>nav a.header-home:hover,
+body header .bar>nav a.header-home:active,
+body header .bar>nav a.header-home[aria-current="page"],
+html[data-theme="light"] body header .bar>nav a.header-home,
+html[data-theme="light"] body header .bar>nav a.header-home:hover,
+html[data-theme="light"] body header .bar>nav a.header-home[aria-current="page"]{
+ background:transparent!important;border-color:transparent!important;box-shadow:none!important;
+}
